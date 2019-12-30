@@ -5,23 +5,35 @@
     </head>
 
     <style>
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-SemiBold.ttf'); }
         @font-face { font-family: 'Kulim Park'; src: url('KulimPark-Regular.ttf'); }
-        p.a {
-            font-family: "Kulim Park", Times, serif;
-        }
-        p.b {
-            font-family: Arial, Helvetica, sans-serif;
-        }
         h1 {
+            color: darkorange;
+            font-family: Montserrat, Helvetica, sans-serif;
+            font-size: 400%;
+            text-align: center;
+            line-height: 0.3;
+            padding-top: 150px;
+        }
+        p.a {
+            color: darkslategray;
             font-family: Kulim Park, Helvetica, sans-serif;
+            font-size: 150%;
+            text-align: center;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
         }
     </style>
 
     <body>
 
-        <h1>This is a Heading</h1>
-        <p class = "b"> This is another paragraph.</p>
-        <p>This is a paragraph.</p>
+        <h1>Hello, I'm Amber!</h1>
+        <p class = "a"> I'm a front-end developer, game developer, designer, and artist.</p>
+        <img src="img/profile.png" alt="profile" vspace = "50" class = "center" style="width:216px;height:230px;">
 
     </body>
 </html>
