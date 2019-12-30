@@ -14,7 +14,7 @@
             font-size: 400%;
             text-align: center;
             line-height: 0.3;
-            padding-top: 180px;
+            padding-top: 110px;
         }
         p.a {
             color: darkslategray;
@@ -38,6 +38,8 @@
         .button {
             background-color: black;
             border-radius: 20px;
+            width: 200px;
+            height: 300px;
             border: none;
             color: white;
             padding: 16px 32px;
@@ -57,15 +59,32 @@
             background-color: black;
             color: white;
         }
+        /* WRAPPER */
+        #wrapper {
+            width: 100%;
+            height: 320px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 
     <body>
 
-        <h1>Hello, I'm Amber!</h1>
-        <p class = "a"> I'm a front-end developer, game developer, designer, and artist.</p>
-        <img src="img/profile.png" alt="profile" vspace = "50" class = "center" style="width:216px;height:230px;">
+        <div>
+            <h1>Hello, I'm Amber!</h1>
+            <p class = "a"> I'm a front-end developer, game developer, designer, and artist.</p>
+            <img src="img/profile.png" alt="profile" vspace = "50" class = "center" style="width:216px;height:230px;">
+        </div>
 
-        <button class = "button button1"><p class = "b">Art</p></button>
+        <div id = "wrapper">
+            <button class = "button button1"><p class = "b">About</p></button>
+            <button class = "button button1"><p class = "b">Art</p></button>
+            <button class = "button button1"><p class = "b">Games</p></button>
+            <button class = "button button1"><p class = "b">Projects</p></button>
+            <button class = "button button1"><p class = "b">Resume</p></button>
+        </div>
 
     </body>
 </html>
