@@ -5,6 +5,7 @@
     </head>
 
     <style>
+        /* FONTS */
         @font-face { font-family: 'Montserrat'; src: url('Montserrat-SemiBold.ttf'); }
         @font-face { font-family: 'Kulim Park'; src: url('KulimPark-Regular.ttf'); }
         h1 {
@@ -13,7 +14,7 @@
             font-size: 400%;
             text-align: center;
             line-height: 0.3;
-            padding-top: 150px;
+            padding-top: 180px;
         }
         p.a {
             color: darkslategray;
@@ -21,11 +22,40 @@
             font-size: 150%;
             text-align: center;
         }
+        p.b {
+            font-family: Montserrat, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 150%;
+        }
+        /* IMAGES */
         .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
+        }
+        /* BUTTONS */
+        .button {
+            background-color: black;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white;
+            color: black;
+        }
+        .button1:hover {
+            background-color: black;
+            color: white;
         }
     </style>
 
@@ -34,6 +64,8 @@
         <h1>Hello, I'm Amber!</h1>
         <p class = "a"> I'm a front-end developer, game developer, designer, and artist.</p>
         <img src="img/profile.png" alt="profile" vspace = "50" class = "center" style="width:216px;height:230px;">
+
+        <button class = "button button1"><p class = "b">Art</p></button>
 
     </body>
 </html>
