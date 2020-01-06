@@ -237,50 +237,11 @@ img {
     position: relative;
     z-index: 10;
 }
-portfolio-item.small {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-portfolio-item.medium {
-    grid-row: span 2;
-    grid-column: span 2;
-}
-portfolio-item.large {
-    grid-row: span 3;
-    grid-column: span 3;
-}
-portfolio-item.tall {
-    grid-row: span 2;
-    grid-column: span 3;
-}
-portfolio-item.wide {
-    grid-row: span 2;
-    grid-column: span 3;
-}
-portfolio-item:hover {
-    color: yellow;
-}
 .one {
     background-image: url(img/sorcerer.png);
 }
 .two {
     background-image: url(img/abaca.png);
-}
-.two::before {
-    content: '';
-    display: block;
-    background: black;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: all ease-in-out 300ms;
-    z-index: -1;
-}
-.two:hover::before {
-    opacity: 0.2;
 }
 .three {
     background-image: url(img/fina.png);
