@@ -76,41 +76,65 @@ html, body {
       transform: translateY(0); 
     } 
 }
+@keyframes fadeInFromBotton {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* FONTS */
-@font-face { font-family: 'Montserrat'; src: url('Montserrat-SemiBold.ttf'); }
-@font-face { font-family: 'Kulim Park'; src: url('KulimPark-Regular.ttf'); }
-@font-face { font-family: 'Hammersmith'; src: url('HammersmithOne-Regular.ttf'); }
+@font-face { font-family: 'Montserrat'; src: url('font/Montserrat-SemiBold.ttf'); }
+@font-face { font-family: 'Hammersmith'; src: url('font/HammersmithOne-Regular.ttf'); }
+@font-face { font-family: 'Oxygen'; src: url('font/Oxygen-Regular.ttf'); }
 h1 {
-    color: snow;
+    color: white;
     font-family: Montserrat, Helvetica, sans-serif;
     font-size: 400%;
     text-align: center;
     line-height: 80px;
-    padding-top: 8%;
+    padding-top: 3%;
     animation-name: delayedFade;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     cursor: default;
 }
+h2 {
+    color: white;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 400%;
+    text-align: right;
+    padding-left: 15%;
+    padding-right: 15%;
+}
 p.a {
-    color: darkslategray;
-    font-family: Kulim Park, Helvetica, sans-serif;
-    font-size: 150%;
-    text-align: center;
-    margin-top: -1.8%;
-    animation-name: delayedFade;
-    animation-duration: 2s;
+    color: white;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 170%;
+    text-align: left;
+    padding-left: 18%;
+    padding-right: 18%;
+    cursor: default;
 }
 p.b {
-    font-family: Montserrat, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 150%;
+    color: rgb(32, 28, 28);
+    font-family: Oxygen, Helvetica, sans-serif;
+    font-size: 120%;
+    text-align: left;
+    padding-left: 18%;
+    padding-right: 18%;
+    cursor: default;
 }
 p.c {
     font-family: Hammersmith, Helvetica, sans-serif;
     text-align: center;
     font-size: 120%;
+    color: white;
+    cursor: default;
 }
 a {
     font-family: Hammersmith, Helvetica, sans-serif;
@@ -121,6 +145,13 @@ a {
 img {
     width: 100%;
     height: 100%;
+}
+.left {
+    position: relative;
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 15%;
 }
 .center {
     position: relative;
@@ -281,4 +312,39 @@ img {
 }
 .fifteen {
     background-image: url(img/abacaTitle.png);
+}
+/* SKILLS */
+.progressContainer {
+    width: 40%;
+    background-color: darkslategray; 
+}
+.skill {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: Hammersmith, Helvetica, sans-serif;
+}
+.characterIllustration {
+    width: 90%;
+    background-color: orangered;
+}
+/* SOCIAL MEDIA BUTTONS */
+.social {
+    text-align: center;
+    text-decoration: none;
+}
+.social li {
+    display: inline;
+    list-style-type: none;
+    -webkit-use-select: none;
+    -moz-user-select: none;
+}
+.social li a {
+    border-bottom: none;
+}
+.social li img {
+    width: 4%;
+    height: 4%;
+    padding-right: 2%;
 }
