@@ -205,6 +205,25 @@ img {
     margin: 25px auto;
 }
 /* BUTTONS */
+
+.buttonHome {
+    font-family: Montserrat, Helvetica, sans-serif;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 3em;
+    margin-top: 2em;
+    transition: all .4s;
+}
+
+.buttonHome:hover {
+    background-color: rgb(255, 96, 5);
+}
 .buttonUnderline {
     background-color: transparent;
     outline: none;
