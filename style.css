@@ -136,6 +136,42 @@ p.c {
     color: white;
     cursor: default;
 }
+p.d {
+    color: rgb(243, 82, 189);
+    font-family: Oxygen, Helvetica, sans-serif;
+    font-size: 120%;
+    text-align: left;
+    padding-left: 18%;
+    padding-right: 18%;
+    cursor: default;
+}
+p.e {
+    color: rgb(111, 109, 226);
+    font-family: Oxygen, Helvetica, sans-serif;
+    font-size: 110%;
+    text-align: left;
+    padding-left: 18%;
+    padding-right: 18%;
+    cursor: default;
+}
+p.rrsub {
+    color: rgb(255, 138, 167);
+    font-family: Oxygen, Helvetica, sans-serif;
+    font-size: 110%;
+    text-align: right;
+    padding-left: 18%;
+    padding-right: 18%;
+    cursor: default; 
+}
+p.rrdes {
+    color: rgb(104, 157, 255);
+    font-family: Oxygen, Helvetica, sans-serif;
+    font-size: 110%;
+    text-align: left;
+    padding-left: 18%;
+    padding-right: 18%;
+    cursor: default;
+}
 a {
     font-family: Hammersmith, Helvetica, sans-serif;
     color: white;
@@ -242,9 +278,24 @@ img {
 }
 /* MAIN CONTENT */
 .main-content {
-    padding: 3%;
-    flex: 1 1 80%;
-    min-height: 100vh;
+    min-height: 150vh;
+}
+.divisor {
+    background-color: rgb(36, 66, 119);
+    width: 100%;
+    height: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+.leftArt {
+    width: 25%;
+    height: 25%;
+    float: left;
+    padding-left: 18%;
+    padding-right: 3%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 /* PORTFOLIO */
 .portfolio {
