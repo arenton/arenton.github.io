@@ -19,6 +19,127 @@
             <button class = "buttonUnderline"><a href = "./art.html"><p class = "c">ART</p></a></button>
             <h1>Amber's Dev Blog!</h1>
         </div>
+        <div class = "blog-post">
+            <h3>
+                Crystal Caves Level Design
+            </h3>
+            <p class = "b1">
+                March 1st, 2020 | Amber Renton | WolverineSoft Studio
+            </p>
+            <p class = "b2">
+                During these past two weeks, I've been focusing on my work in the level design
+                team. Before jumping into getting art assets out for the Crystal Caves, There
+                were multiple questions we had to answer first: (1) How large was each tile with
+                respect to the player sprite? (2) How complex did we want tiles to be relative
+                to their background art? (3) What are the factors that we must consider for
+                parallax? We ultimately determined that, much like in Celeste, Io would be 2 tiles
+                tall with a collider of only 1 tile. We also determined that tiles would look simple
+                in order to avoid the screen from getting too chaotic, and that for now, background
+                images should tile for simple and rapid parallax. 
+                <br><br>
+                <img src = "img/ltp20/keyconcept.png" style = "float:left;width:100%;margin:1%">
+                As pictured, I already had a key concept in place for the appearance of
+                a Crystal Caves level. However, this was only a draft, and the piece wasn't cleanly
+                broken up into different parallax-able layers. Additionally, each "layer" of this 
+                piece wasn't tile-able horizontally. 
+                <br><br>
+                Thus, my next course of action was to go through this illustration file and manually
+                separate it into layers. After doing that, I had to go back through and tile each layer
+                with itself and make the necessary adjustments to make each piece horizontally tile-able
+                for a clean parallax. While this was fairly tedious work and took quite a while, the
+                results were pretty satisfying and each layer can be viewed below.
+            </p>
+            <div style = "float:left">
+                <img src = "img/ltp20/1.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/2.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/3.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/4.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/5.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/6.png" style = "float:left;width:30%;margin:1%">
+            </div>
+            <p class = "b2">
+                The finished product looked like this:
+                <img src = "img/ltp20/fullbgpreview.png" style = "float:left;width:100%;margin:1%">
+                <br><br>
+                After finishing up with the Crystal Caves background, I then moved into the phase of
+                planning out its tileset. This proved to be difficult, as my original key concept art
+                did not show off much of a "tileset". Additionally, it was still up in the air as to
+                how much lighting would be done in-sprite as opposed to in-Unity with tools such as
+                normal maps. Before creating any final assets, I drafted a potential "block" in my 
+                illustration software to test color palettes and general design. This would be a
+                potential platform tile.
+                <img src = "img/ltp20/tileexample.png" style = "float:left;width:100%;margin:1%">
+                After reviewing the image, I drafted vector final sprites based on this tile in Adobe 
+                Illustrator. I took care to ensure that it tiled nicely.
+            </p>
+            <div style = "float:left">
+                <img src = "img/ltp20/CrystalCaves-27.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-26.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-28.png" style = "float:left;width:30%;margin:1%">
+            </div>
+            <p class = "b2">
+                Then, I created other tiles with colors featured in the keyconcept. While these are not 
+                final, I wanted to see how these tiles looked in-game before making more detailed sprites.
+            </p>
+            <div style = "float:left">
+                <img src = "img/ltp20/CrystalCaves-0.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-1.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-2.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-3.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-4.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-5.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-6.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-7.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-8.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-15.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-16.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-17.png" style = "float:left;width:30%;margin:1%">
+            </div>
+            <p class = "b2">
+                Not all are shown! There are a total of 30 sprites so far, and it's likely that even
+                more will be needed per level. I was also asked to create additional sprites to serve
+                not as platforms but as decorations, so I created some crystal sprites. I was also 
+                asked to create "hazard" sprites, so I opted to create pointier crystals.
+            </p>
+            <div style = "float:left">
+                <img src = "img/ltp20/CrystalCaves-21.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-22.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-23.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-24.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-25.png" style = "float:left;width:30%;margin:1%">
+                <img src = "img/ltp20/CrystalCaves-29.png" style = "float:left;width:30%;margin:1%">
+            </div>
+            <p class = "b2">
+                I find myself not so much a fan of the saturated colors of these sprites, however. 
+                Even with these many tiles, the level still grows repetitive.
+                <br><br>
+                After helping other level design artists understand how to create smoothly tile-able
+                tile palettes, my next steps will be to add and refine even more tiles and foreground
+                adornments to the Crystal Cave level before moving on to drafting similar things for
+                the Windmill Forts and other planned environments. Similar to my work in Dreamwillow,
+                I've found Level Design art to be one of the most work-heavy teams in the project, and
+                I'm concerned about what this might mean for scope. I intend to use Spring Break to 
+                put out a lot of art assets for Project Blue, however, so as of now I am not too worried.
+            </p>
+        </div>
+        <div class = "blog-post">
+            <h3>
+                Style Guide, Tutorials, and Key Concepts
+            </h2>
+            <p class = "b1">
+                February 17th, 2020 | Amber Renton | WolverineSoft Studio
+            </p>
+            <p class = "b2">
+                As the past two weeks have wrapped up the pre-production and pre-alpha phases,
+                I've been working on wrapping up the first iteration of the studio style guide,
+                pushing out some tutorials, and illustrating key concept art for other art 
+                members and teams to reference. <br><br>
+                The questions that are asked of me most consistently are about visual theming.
+                Without a central theme, it's difficult to put together a cohesive looking, 
+                sounding, and feeling game. These questions are what I attempted to answer through
+                the Style Guide, which is posted on Confluence under the Departments > Art folder.
+            </p>
+        </div>
         <img src = "img/devblog1.png" style="width:90%">
        
     </body>

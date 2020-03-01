@@ -316,6 +316,35 @@ img {
     animation-name: fadeIn;
     animation-duration: 2s;
 }
+/* BLOG */
+.blog-post {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+}
+h3 {
+    color: white;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 300%;
+    text-align: left;
+    cursor: default;
+}
+p.b1 {
+    color: black;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 120%;
+    text-align: left;
+    cursor: default;
+}
+p.b2 {
+    color: rgb(32, 28, 28);
+    font-family: Oxygen, Helvetica, sans-serif;
+    font-size: 120%;
+    text-align: left;
+    cursor: default;
+}
+
 /* PORTFOLIO */
 .portfolio {
     display: grid;
