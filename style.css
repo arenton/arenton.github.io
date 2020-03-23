@@ -91,12 +91,14 @@ html, body {
 @font-face { font-family: 'Montserrat'; src: url('font/Montserrat-SemiBold.ttf'); }
 @font-face { font-family: 'Hammersmith'; src: url('font/HammersmithOne-Regular.ttf'); }
 @font-face { font-family: 'Oxygen'; src: url('font/Oxygen-Regular.ttf'); }
+@font-face { font-family: 'Raleway'; src: url('font/Raleway-Regular.ttf'); }
+@font-face { font-family: 'Julius Sans One'; src: url('font/JuliusSansOne-Regular.ttf'); }
 h1 {
     color: white;
     font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 400%;
+    font-size: 700%;
     text-align: center;
-    line-height: 80px;
+    line-height: 100px;
     padding-top: 3%;
     animation-name: delayedFade;
     animation-duration: 2s;
@@ -111,12 +113,23 @@ h2 {
     padding-left: 15%;
     padding-right: 15%;
 }
+h3 {
+    color: white;
+    font-family: Hammersmith, Helvetica, sans-serif;
+    font-size: 500%;
+    text-align: center;
+    line-height: 80px;
+    padding-top: 3%;
+    animation-name: delayedFade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
 p.a {
     color: white;
     font-family: Montserrat, Helvetica, sans-serif;
     font-size: 170%;
     text-align: left;
-    padding-left: 18%;
     padding-right: 18%;
     cursor: default;
 }
@@ -125,7 +138,6 @@ p.b {
     font-family: Oxygen, Helvetica, sans-serif;
     font-size: 120%;
     text-align: left;
-    padding-left: 18%;
     padding-right: 18%;
     cursor: default;
 }
@@ -141,7 +153,6 @@ p.d {
     font-family: Oxygen, Helvetica, sans-serif;
     font-size: 120%;
     text-align: left;
-    padding-left: 18%;
     padding-right: 18%;
     cursor: default;
 }
@@ -150,7 +161,6 @@ p.e {
     font-family: Oxygen, Helvetica, sans-serif;
     font-size: 110%;
     text-align: left;
-    padding-left: 18%;
     padding-right: 18%;
     cursor: default;
 }
@@ -303,8 +313,8 @@ img {
     background-color: rgb(36, 66, 119);
     width: 100%;
     height: 25%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     position: relative;
 }
 .leftArt {
@@ -315,6 +325,18 @@ img {
     padding-right: 3%;
     animation-name: fadeIn;
     animation-duration: 2s;
+}
+/* GAME PORTFOLIO */
+div.game-background {
+    background-image: url("img/bg2.png");
+    height: 100%;
+    width: 100%;
+}
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: white;
+    height: 100%;
 }
 /* BLOG */
 .blog-post {
@@ -345,7 +367,7 @@ p.b2 {
     cursor: default;
 }
 
-/* PORTFOLIO */
+/* ART PORTFOLIO */
 .portfolio {
     display: grid;
     height: 100%;
