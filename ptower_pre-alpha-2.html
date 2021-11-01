@@ -111,6 +111,59 @@
                                             can be seen below.
                                         </p>
                                         <a href="#" class="image fit"><img src="images/Devblog/10-31-a.JPG" alt="" /></a>
+                                        <h3>Programming & Design Work</h3>
+                                        <p>
+                                            This sprint, I've done quite a bit of programming and design work. Before that, here's a mildly interesting tangent. I'm
+                                            currently taking EECS 481: Software Engineering, and it's already one of the most useful classes I've taken. We go over 
+                                            several concepts that I've found highly relevant to both my experiences in the industry as well as to the Studio. Among these
+                                            has been Requirements Elicitation: the principle that neither the client nor developer truly know what is wanted, and therefore
+                                            requirements for a software must be "discovered" through a variety of processes. In the Studio, our team is both the client and 
+                                            the developer to a degree. 
+                                        </p>
+                                        <p>
+                                            Why am I mentioning this? I find that it relates to the more unfortunate side of a studio project. It is incredibly difficult 
+                                            to encourage members to feel ownership over the project, even with a team as small as this. While everyone is able to implement
+                                            features efficiently and create incredible assets, there are only around 2 or 3 of us who feel comfortable enough to integrate all 
+                                            these separate systems into a working whole. Assigning integration-related work to others is a problem of requirements. Integration
+                                            requires a heavy understanding of how separate elements in the game should tie together, and involves a certain degree of "discovery"
+                                            that not many are comfortable with. For example, it's not enough to tell a member to implement A into B; a list of edge cases and 
+                                            expected behaviors should be provided, and even then, additional requirements usually appear along the way. It takes a degree of 
+                                            confidence (and a lot of time) to work through these.
+                                        </p>
+                                        <p>
+                                            In any case, I bring this up as it relates to why I've been doing programming and design work. If future studio leads can 
+                                            overcome the challenge of having all members view the project with equal ownership, I think they will be in a much better place. 
+                                        </p>
+                                        <p>
+                                            One of my primary focuses this sprint was adding in most enemy types and recreating 40 rounds of Bloons TD 6 for the sake of 
+                                            playtesting. I was able to create all enemy "layers", from red to ceramic. In doing this, I made significant modifications to the 
+                                            existing system for changing-enemies-upon-damage (e.g. when a blue bloon pops to a red bloon) to remove some redundancy and 
+                                            make things a lot easier for design.
+                                        </p>
+                                        <a href="#" class="image left"><img src="images/Devblog/10-31-b.JPG" alt="" /></a>
+                                        <video width="600" controls>
+                                            <source src="images/Devblog/10-31-c.mp4" type=video/mp4>
+                                        </video>
+                                        <p>
+                                            Previously, enemy progression (e.g. green -> blue -> red) had to be manually hardcoded into every enemy prefab. I changed this
+                                            system so that a single scriptable object controls the global enemy progression. The scriptable object contains an array of the
+                                            following struct:
+                                        </p>
+                                        <pre><code>
+[System.Serializable]
+public struct EnemyStage {
+    [Tooltip("The name of this enemy")]
+    public string name;
+    [Tooltip("The sprite associated with the enemy")]
+    public Sprite sprite;
+    [Tooltip("A multiplier applied to the speed of the enemy")]
+    public float speed;
+    [Tooltip("The health at which an enemy switches to this type")]
+    public float healthToChange;
+    [Tooltip("A toggle for the visibility of the enemy")]
+    public bool camoflauged;
+};
+                                        </code></pre>
 									</section>
 							</div>
 						</div>
