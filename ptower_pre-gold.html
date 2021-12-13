@@ -52,7 +52,7 @@
 												<ul class="alt">
                                                     <li>2 Hours - Preparing for studio-wide meetings</li>
                                                     <li>4 Hours - Running studio-wide meetings</li>
-                                                    <li>5 Hours - Project Tower UI overhaul</li>
+                                                    <li>6 Hours - Project Tower UI overhaul</li>
                                                     <li>3 Hours - Integrating final art assets</li>
                                                     <li>8 Hours - Project Tower cover art</li>
                                                     <li>5 Hours - Project Bloom cover art</li>
@@ -80,12 +80,63 @@
                                         <h3>Project Tower UI Overhaul</h3>
                                         <p>
                                             In response to some feedback that we received in a playtest with Jordan Ajlouni, I made very significant UI changes
-                                            which had been sitting in the backlog for ages. I also fixed a few minor things that I felt seriously took away
-                                            from the professionalism of the game.
+                                            which had been sitting in the backlog for ages. I also began fixing a few minor things that I felt seriously took 
+                                            away from the professionalism of the game.
                                         </p>
                                         <video width="600" controls>
                                             <source src="images/Devblog/12-12-b.mp4" type=video/mp4>
                                         </video>
+                                        <p>
+                                            In the video above, we have an intermediary glimpse of some of the first changes I made:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Previously, the tower range icon was just a default Unity circle that turned neon red and neon green, depending 
+                                                on whether or not you could place a tower there. It was pretty painful to see. I changed it to a softer grey
+                                                circle, reminiscent of the tower range display from Bloons TD 6.
+                                            </li>
+                                            <li>
+                                                The tower description text used to overflow all the time. Also a little painful, especially for first-time 
+                                                playtesters.
+                                            </li>
+                                            <li>
+                                                There used to be a LOT of negative space in the Tower selection UI, which made it feel as though something were
+                                                missing. I changed out the background sprite entirely (it used to be a black rectangle) and began experimenting
+                                                with a more interesting shape/color. As you can see above, it's not exactly themed with the rest of the game at
+                                                this point, so I do end up changing it further later.
+                                            </li>
+                                            <li>
+                                                I removed dynamic spawning altogether from the tower actions screen. Given that each tower is guaranteed to have 
+                                                two upgrades, and each tower is guaranteed to have a sell button, it really makes no sense that these buttons are
+                                                instantiated at runtime. The system itself is understandable, but for our purposes, it was a lot easier to make 
+                                                aesthetic changes after I made everything static.
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            But of course, the above wasn't it. Game UI is really tricky to get right, because the smallest things can make an 
+                                            otherwise excellent game look amateur-ish. This is - of course - subjective, but I felt that we could do even better.
+                                            Thus, we step into discussion on "part 2" of the UI overhaul.
+                                        </p>
+                                        <video width="600" controls>
+                                            <source src="images/Devblog/12-12-c.mp4" type=video/mp4>
+                                        </video>
+                                        <p>
+                                            Disclaimer - I didn't touch the main menu at all (I only mention this as the video above briefly displays the main
+                                            menu). I completely changed the visual theming of the UI, both in-game and in our narrative scenes. I moved in the 
+                                            direction of stone tablets, which I felt was appropriate with the Norse-inspired visual of our game (with rune stones
+                                            and what-not). I also moved certain elements of the UI around, such as the pause and play buttons, in an attempt to 
+                                            make their placement more intuitive. 
+                                        </p>
+                                        <p>
+                                            Additionally, I made a small change that updates tower portrait art with tower upgrade purchases (this way, we can 
+                                            see all of our artists' work)! I added tooltips to the tower purchase screen to make them a bit more readable.
+                                            Finally, I enforced some consistency in our font choice.
+                                        </p>
+                                        <p>
+                                            While the end product certainly isn't close to perfect, I do think the experience feels a bit more polished as a 
+                                            result of these changes. For reference, this is what the UI looked like before these changes:
+                                        </p>
+                                        <a href="#" class="image fit"><img src="images/Devblog/12-12-d.JPG" alt="" /></a>
 									</section>
 							</div>
 						</div>
